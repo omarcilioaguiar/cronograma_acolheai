@@ -43,7 +43,7 @@ O **SCRUM** foi escolhido como metodologia por ser o framework ágil mais adequa
 
 ## 🗺️ Visão Geral da Arquitetura do Sistema
 
-```
+```mermaid
 graph TB
     subgraph FRONTEND["🖥️ acolhe-web — Next.js 14 + TypeScript"]
         UI[Telas do Sistema]
@@ -90,7 +90,7 @@ graph TB
 
 ## 📅 Estrutura das Sprints e Cronograma
 
-```
+```mermaid
 gantt
     title Cronograma do TCC AcolheAI — Semestre 2027.1
     dateFormat  YYYY-MM-DD
@@ -147,7 +147,7 @@ gantt
 
 ## 🗂️ Mapa de Dependências entre User Stories
 
-```
+```mermaid
 graph LR
     US01["🤝 US-01\nKick-off"]
     US02["📄 US-02\nRequisitos"]
@@ -314,7 +314,7 @@ SEMANA 1             SEMANA 2                 SEMANA 3–4              SEMANA 4
 
 **📐 Mapa de Requisitos Funcionais**
 
-```
+```mermaid
 mindmap
   root((AcolheAI))
     Usuários
@@ -376,7 +376,7 @@ mindmap
 
 **🏗️ Comunicação entre Serviços**
 
-```
+```mermaid
 graph LR
     subgraph CLIENT["🖥️ Cliente"]
         BROWSER[Navegador Web\nNext.js :3001]
@@ -442,7 +442,7 @@ graph LR
 
 **🗄️ Modelo Entidade-Relacionamento (Simplificado)**
 
-```
+```mermaid
 erDiagram
     USUARIO {
         uuid id PK
@@ -529,7 +529,7 @@ erDiagram
 
 **🎨 Fluxo de Telas do Protótipo**
 
-```
+```mermaid
 flowchart TD
     LAND["🌐 Landing Page"] --> LOGIN["🔐 Login / Cadastro"]
     LOGIN --> HOME["🏠 Home — Busca"]
@@ -672,7 +672,7 @@ SEM.5–6          SEM.6–7              SEM.8–9             SEM.9–10      
 
 **🏠 Fluxo de Aprovação de Lar**
 
-```
+```mermaid
 stateDiagram-v2
     [*] --> Pendente : Cadastro enviado
 
@@ -720,7 +720,7 @@ stateDiagram-v2
 
 **📍 Lógica de Score do Matching**
 
-```
+```mermaid
 flowchart LR
     INPUT["📥 Perfil do Usuário\n+ Coordenadas"] --> QUERY["🔍 Buscar lares\nno raio configurado"]
     QUERY --> HAVER["📐 Haversine\nCalcular distâncias"]
@@ -765,7 +765,7 @@ flowchart LR
 
 **🤖 Fluxo do Agente Conversacional**
 
-```
+```mermaid
 sequenceDiagram
     actor U as Usuário
     participant W as acolhe-web
@@ -972,7 +972,7 @@ SEM.12–13         SEM.13–16               SEM.16–18         SEM.14–21
 
 **📚 Estrutura de Entregáveis da Documentação**
 
-```
+```mermaid
 graph TD
     DOC["📚 Pacote de Entrega Final — AcolheAI TCC"]
 
@@ -1016,7 +1016,7 @@ graph TD
 
 ## ⚠️ Mapa de Riscos do Projeto
 
-```
+```mermaid
 quadrantChart
     title Mapa de Riscos - Probabilidade vs Impacto
     x-axis Baixa Probabilidade --> Alta Probabilidade
@@ -1076,7 +1076,7 @@ Para que qualquer User Story seja considerada **"Pronta"**, ela deve atender a:
 
 ## 📈 Estimativa Total de Esforço
 
-```
+```mermaid
 pie title Distribuição de Story Points por Sprint (123 SP total)
     "Sprint 1 — Planejamento & Prototipação (29 SP)" : 29
     "Sprint 2 — Desenvolvimento Core (60 SP)" : 60
@@ -1094,7 +1094,7 @@ pie title Distribuição de Story Points por Sprint (123 SP total)
 
 ## 🔄 Fluxo SCRUM do Projeto
 
-```
+```mermaid
 flowchart LR
     PB["📋 Product\nBacklog"] --> SP["🗓️ Sprint\nPlanning"]
     SP --> SB["📌 Sprint\nBacklog"]
